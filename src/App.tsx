@@ -1,4 +1,4 @@
-import './App.scss'
+import './App.css'
 
 const App = () => {
   return <div className='app'>{`alva-yky's blog`}</div>
