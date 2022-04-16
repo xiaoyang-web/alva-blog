@@ -1,7 +1,12 @@
 import './App.css'
 
 const App = () => {
-  return <div className='app px-2'>{`alva-yky's blog`}</div>
+  return (
+    <div className='app'>
+      {`alva-yky's blog`}
+      <button className='btn'>按钮</button>
+    </div>
+  )
 }
 
 export default App
