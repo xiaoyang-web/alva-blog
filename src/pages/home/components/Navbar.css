@@ -1,20 +1,135 @@
-.navbar {
+/* navbar */
+.navbar-wrapper {
   @apply fixed
     top-0
-    flex
-    items-center
     w-full
-    h-14
     px-3
     md:px-6
-    bg-white/10
+    bg-white
     shadow-md
-    shadow-black/5
-    backdrop-blur-sm;
+  shadow-black/5;
 }
 
-.navbar .nav {
+.navbar {
+  @apply flex
+    items-center
+    w-full
+    xl:max-w-screen-xl
+    h-14
+    m-auto;
+}
+
+.logo {
+  @apply flex
+    items-center
+    px-2;
+}
+
+.logo > img {
+  @apply pr-2;
+}
+
+.logo > span {
+  @apply text-xl
+    leading-none
+    font-mono;
+}
+
+.nav {
+  @apply flex
+    justify-center
+    flex-1
+    px-6
+    font-bold;
+}
+
+.nav-item a {
+  @apply flex
+    items-center
+    px-2
+    xl:mx-8
+    hover:bg-cyan-200
+    rounded-2xl;
+}
+
+.search {
+  @apply flex
+    items-center
+    w-64
+    px-4
+    py-1
+    border
+    border-gray-300
+    rounded-full
+    transition-all
+    duration-300;
+}
+
+.search-active {
+  @apply border
+    border-cyan-500
+    shadow-md
+    shadow-black/5;
+}
+
+.search-input-wrapper {
+  @apply flex
+    flex-1;
+}
+
+.search-input {
   @apply flex-1
-    hidden
-    md:block;
+    pr-3
+    text-xs
+    outline-none
+    bg-transparent
+    caret-cyan-500;
+}
+
+.clear-button {
+  @apply mr-4
+    p-1;
+}
+
+.search-button {
+  @apply ml-auto
+   p-1;
+}
+
+.mobile-menu-wrapper {
+  @apply flex
+    ml-auto;
+}
+
+.mobile-menu-button {
+  @apply px-2;
+}
+
+.mobile-menu {
+  @apply absolute
+    bottom-0
+    left-0
+    right-0
+    border-t
+    border-cyan-200
+    translate-y-full
+    bg-white
+    shadow-md
+    shadow-black/5;
+}
+
+.mobile-menu > .search {
+  @apply mx-auto
+    w-3/4
+    my-4;
+}
+
+.menu-item {
+  @apply flex
+    items-center
+    px-6
+    py-2
+    font-thin
+    text-sm
+    tracking-widest;
 }

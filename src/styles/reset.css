@@ -73,6 +73,7 @@ sup {
 
 img {
   border-style: none;
+  -webkit-user-drag: none;
 }
 
 button,
